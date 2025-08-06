@@ -1,0 +1,16 @@
+{
+  "name": "aqa-advanced",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Now I can use git",
+  "main": "new.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "chalk": "^4.1.2"
+  }
+}
