@@ -1,17 +1,26 @@
 {
-  "name": "aqa-advanced",
-  "version": "1.0.0",
-  "type": "module",
-  "description": "Now I can use git",
-  "main": "new.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint \"src/**/*.{js, ts}\" "
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^1.11.0",
-    "chalk": "^4.1.2"
-  }
+	"name": "aqa-advanced",
+	"version": "1.0.0",
+	"description": "Now I can use git",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky",
+		"lint": "eslint .",
+		"lint-fix": "eslint . --fix",
+		"format": "prettier .",
+		"format-fix": "prettier . --write"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"chalk": "^5.5.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.35.0",
+		"eslint": "^9.35.0",
+		"globals": "^16.4.0",
+		"husky": "^9.1.7",
+		"prettier": "^3.6.2"
+	}
 }
