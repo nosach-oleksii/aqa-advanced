@@ -5,20 +5,19 @@
 Присвойте їм значення та виведіть кожну змінну на консоль.*/
 
 //рядок
-let myString = "String";
+const myString = "String";
 
 //число
-let myNumber = 100;
+const myNumber = 100;
 
 //буль
-let myBoulean = true;
+const myBoulean = true;
 
 //null
-let myNull = null;
+const myNull = null;
 
 //undefined
 let myUndefined;
-
 
 console.log("рядок", myString);
 console.log("число", myNumber);

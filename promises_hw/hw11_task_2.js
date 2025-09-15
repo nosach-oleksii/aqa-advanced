@@ -20,7 +20,7 @@
 //function todo
 function getTodo() {
     return fetch('https://jsonplaceholder.typicode.com/todos/1')
-    .then(response => response.json())
+    .then(response => {return response.json();})
     .catch(error => {
         console.error('Error:', error);
         throw error;
@@ -30,14 +30,14 @@ function getTodo() {
 //function user
 function getUser() {
     return fetch('https://jsonplaceholder.typicode.com/users/1')
-      .then(response => response.json())
+      .then(response => {return response.json();})
       .catch(error => {
         console.error('Error:', error);
         throw error;
     });
 }
 //use Promis all
-const promisesAll = Promise.all([getTodo(), getUser()])
+const promisesAll = Promise.all([getTodo(), getUser()]);
 
 promisesAll
 .then(result => {
@@ -49,7 +49,7 @@ promisesAll
 });
 
 //use Promis race
-const promisesRace = Promise.race([getTodo(), getUser()])
+const promisesRace = Promise.race([getTodo(), getUser()]);
 
 promisesRace
 .then(result => {

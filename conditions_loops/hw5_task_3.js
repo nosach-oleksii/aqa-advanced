@@ -24,17 +24,17 @@
 
 const number = 5;
 
-console.log('Taблицю множення з for')
+console.log('Taблицю множення з for');
 for (let i = 1; i <= 10; i++) {
-    let result = number * i;
+    const result = number * i;
     console.log(`${number}X${i} = ${result}`);
 }
 
-console.log('\nTaблицю множення з while')
+console.log('\nTaблицю множення з while');
 let j = 1;
 
 while (j <= 10) {
-    let result = number * j;
+    const result = number * j;
     console.log(`${number}X${j} = ${result}`);
     j++;
 }

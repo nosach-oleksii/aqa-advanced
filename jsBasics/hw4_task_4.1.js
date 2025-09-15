@@ -8,15 +8,14 @@
 Округліть кожне отримане значення до 2 значень після крапки.*/
 
 //Створення змінної радуса
-let radius = 20;
+const radius = 20;
 
 //Створення змінної площіни круга + формула
-let circleArea = Math.PI * radius ** 2;
+const circleArea = Math.PI * radius ** 2;
 
 //Створення змінно округлення до 2 значень після крапки
-let roundedCircleArea = circleArea.toFixed(2);
+const roundedCircleArea = circleArea.toFixed(2);
 
 console.log("Radius", radius);
 console.log("Area", roundedCircleArea);
-
 

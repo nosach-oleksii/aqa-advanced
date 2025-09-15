@@ -6,16 +6,16 @@
 Округліть кожне отримане значення до 2 значень після крапки*/
 
 //Створення змінної radius і присвойте їй числове значення радіуса циліндра.
-let radius = 50;
+const radius = 50;
 
 //Створення змінної height і присвойте їй числове значення висоти циліндра.
-let height = 80;
+const height = 80;
 
 //Створення змінної обчислення об'єм циліндра за формулою π * radius^2 * height.
-let volume = Math.PI * radius ** 2 * height
+const volume = Math.PI * radius ** 2 * height;
 
 //Округлення значення до 2 значень після крапки.
-let roundedVolume = volume.toFixed(2);
+const roundedVolume = volume.toFixed(2);
 
 console.log("Radius", radius);
 console.log("Height", height);

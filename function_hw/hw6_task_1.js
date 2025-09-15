@@ -8,23 +8,21 @@
 //     function expression, arrow function)
 
 // function declaration
-function getAreaRectangle1(width, height){
-    let area = width * height;
+function getAreaRectangle1(width, height) {
+    const area = width * height;
     return area;
 }
 
-let result = getAreaRectangle1(3, 5);
-console.log('Area:', result)
-
+const result = getAreaRectangle1(3, 5);
+console.log('Area:', result);
 
 // function expression
-const getAreaRectangle2 = function(width, height){
+const getAreaRectangle2 = function(width, height) {
     return "Area: " + width * height;
-}
+};
 
-console.log(getAreaRectangle2(5, 7))
-
+console.log(getAreaRectangle2(5, 7));
 
 // arrow function
-const getAreaRectangle3 = (width, height) => "Area: " + width * height
-console.log(getAreaRectangle3(2, 8))
+const getAreaRectangle3 = (width, height) => {return "Area: " + width * height;};
+console.log(getAreaRectangle3(2, 8));
