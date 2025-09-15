@@ -15,7 +15,7 @@
 
 const averageGrade = 85;
 
-switch (true){
+switch (true) {
     case (averageGrade < 60) :
         console.log('Незадовільно');
         break;
@@ -32,5 +32,5 @@ switch (true){
         console.log('Відмінно');
         break;
     default:
-        console.log('Некоректне значення оцінки')
+        console.log('Некоректне значення оцінки');
 } 

@@ -25,7 +25,7 @@ const car2 = {
 
 const car3 = {
     ...car1,
-    ...car2
+    ...car2,
 };
 
 console.log(car3);

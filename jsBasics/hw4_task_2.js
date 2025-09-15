@@ -6,15 +6,15 @@
 Потім використайте шаблонний рядок для створення того ж вітання. 
 Виведіть результат в консоль.*/
 
-let nameOne = "Donald";
-let nameTwo = "Joe";
+const nameOne = "Donald";
+const nameTwo = "Joe";
 
 //конкатенацію рядків
-let greetingConcatenation = "Hello, " + nameOne + " and " + nameTwo + "! Happy birthday to you!";
+const greetingConcatenation = "Hello, " + nameOne + " and " + nameTwo + "! Happy birthday to you!";
 
 console.log(greetingConcatenation);
 
 //шаблонний рядок
-let greetingTemplate = `We wish ${nameOne} and ${nameTwo} good health!`;
+const greetingTemplate = `We wish ${nameOne} and ${nameTwo} good health!`;
 
 console.log(greetingTemplate);

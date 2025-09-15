@@ -6,7 +6,7 @@
 // кількість мілісекунд
 
 function someFunc(text, ms) {
-    setTimeout(() => {console.log(text);}, ms)
+    setTimeout(() => {console.log(text);}, ms);
 };
 
 someFunc("Hi Alex!", 5000);

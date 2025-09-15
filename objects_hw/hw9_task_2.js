@@ -9,7 +9,7 @@
 const book = {
     title: "Some names of book",
     author: "Some Author",
-    year: 2025
+    year: 2025,
 };
 
 const { title, author } = book;

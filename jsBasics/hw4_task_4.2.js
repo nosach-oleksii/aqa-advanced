@@ -7,16 +7,16 @@
 Округліть кожне отримане значення до 2 значень після крапки.*/
 
 //Створення змінної length та присвоєння їй числового значення довжини прямокутника.
-let length = 30;
+const length = 30;
 
 //Створення змінної width та присвоєння їй числового значення ширини прямокутника.
-let width = 15;
+const width = 15;
 
 //Створення змінної площі прямокутника за формулою length * width
-let rectangleArea = length * width;
+const rectangleArea = length * width;
 
 //Округлення значення до 2 значень після крапки.
-let roundedRectangleArea = rectangleArea.toFixed(2);
+const roundedRectangleArea = rectangleArea.toFixed(2);
 
 console.log("Lengthe", length);
 console.log("Width", width);

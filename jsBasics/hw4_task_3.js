@@ -5,10 +5,10 @@
 Виведіть усі змінні в консоль */
 
 //створення змінної вік
-let personAge = 40;
+const personAge = 40;
 
 //створення змінної повноліття
-let isAdult = personAge >= 18;
+const isAdult = personAge >= 18;
 
 //віведення результату
 console.log("Age", personAge);
