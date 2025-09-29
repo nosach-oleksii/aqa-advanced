@@ -1,30 +1,30 @@
 // Завдання 3
 
-// Виконайте завдання 2 але використовуючи конструкцію async/await 
+// Виконайте завдання 2 але використовуючи конструкцію async/await
 // для функції що виконує запити
 
 //async function todo
 async function getTodo() {
     try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+        const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
         const data = await response.json();
         return data;
     } catch (error) {
-        console.error('Error in GetTodo:', error);
+        console.error("Error in GetTodo:", error);
         throw error;
-      }
+    }
 }
 
 //async function user
 async function getUser() {
     try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
+        const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
         const data = await response.json();
         return data;
     } catch (error) {
-        console.error('Error in GetUser:', error);
+        console.error("Error in GetUser:", error);
         throw error;
-      }
+    }
 }
 
 //use Promis all

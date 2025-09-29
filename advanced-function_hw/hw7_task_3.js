@@ -13,19 +13,19 @@
 // навіть якщо помилка виникла або не виникла.
 
 function divide(numerator, denominator) {
-	if (typeof numerator !== "number" || typeof denominator !== "number") {
-		throw new Error("Two numbers must be numbers");
-	}
-	if (denominator === 0) {
-		throw new Error("Divide by 0 imposible");
-	}
-	return numerator / denominator;
+    if (typeof numerator !== "number" || typeof denominator !== "number") {
+        throw new Error("Two numbers must be numbers");
+    }
+    if (denominator === 0) {
+        throw new Error("Divide by 0 imposible");
+    }
+    return numerator / denominator;
 }
 
 try {
-	console.log("Результат:", divide(8, 2));
+    console.log("Результат:", divide(8, 2));
 } catch (error) {
-	console.log("Помілка:", error.message);
+    console.log("Помілка:", error.message);
 } finally {
-	console.log("Робота завершена");
+    console.log("Робота завершена");
 }

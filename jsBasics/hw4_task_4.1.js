@@ -18,5 +18,3 @@ let roundedCircleArea = circleArea.toFixed(2);
 
 console.log("Radius", radius);
 console.log("Area", roundedCircleArea);
-
-

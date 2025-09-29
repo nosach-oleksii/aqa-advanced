@@ -1,17 +1,17 @@
 // Завдання 4 (Опціонально)
 
-// Створіть 2 класи, які будуть мати в собі методи що реалізують 
+// Створіть 2 класи, які будуть мати в собі методи що реалізують
 // функції з попереднього завдання.
 
 //async function todo
 class TodoService {
     async getTodo() {
         try {
-            const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+            const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
             const data = await response.json();
             return data;
         } catch (error) {
-            console.error('Error in GetTodo:', error);
+            console.error("Error in GetTodo:", error);
             throw error;
         }
     }
@@ -21,11 +21,11 @@ class TodoService {
 class UserService {
     async getUser() {
         try {
-            const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
+            const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
             const data = await response.json();
             return data;
         } catch (error) {
-            console.error('Error in GetUser:', error);
+            console.error("Error in GetUser:", error);
             throw error;
         }
     }

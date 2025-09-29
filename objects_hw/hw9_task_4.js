@@ -10,7 +10,7 @@
 const person = {
     firstName: "Bruce",
     lastName: "Lee",
-    age: 33
+    age: 33,
 };
 
 person.email = "bruce-lee@kungfu.yes";

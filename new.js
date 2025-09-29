@@ -67,7 +67,7 @@ console.log(5%10)
 a += 5
 console.log(a)*/
 
-let a = 2
-let b = '"2'
+let a = 2;
+let b = '"2';
 
-console.log ( a !== b )
+console.log(a !== b);

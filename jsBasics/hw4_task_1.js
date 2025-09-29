@@ -19,7 +19,6 @@ let myNull = null;
 //undefined
 let myUndefined;
 
-
 console.log("рядок", myString);
 console.log("число", myNumber);
 console.log("буль", myBoulean);

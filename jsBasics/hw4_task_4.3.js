@@ -12,7 +12,7 @@ let radius = 50;
 let height = 80;
 
 //Створення змінної обчислення об'єм циліндра за формулою π * radius^2 * height.
-let volume = Math.PI * radius ** 2 * height
+let volume = Math.PI * radius ** 2 * height;
 
 //Округлення значення до 2 значень після крапки.
 let roundedVolume = volume.toFixed(2);

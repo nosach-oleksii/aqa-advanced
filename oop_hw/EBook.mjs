@@ -6,34 +6,34 @@
 // але ще формат файлу). Створіть інстанс (екземпляр) класу EBook та
 // викличте метод printInfo
 
-import { Book } from './Book.mjs';
+import { Book } from "./Book.mjs";
 
 export class EBook extends Book {
-	constructor(title, author, year, format) {
-		super(title, author, year);
-		this._format = format;
-	}
+    constructor(title, author, year, format) {
+        super(title, author, year);
+        this._format = format;
+    }
 
-	get format() {
-		return this._format;
-	}
+    get format() {
+        return this._format;
+    }
 
-	set format(value) {
-		if (typeof value !== 'string' || value.trim() === '') {
-			throw new Error('Format must be a string and not empty');
-		}
-		this._format = value;
-	}
+    set format(value) {
+        if (typeof value !== "string" || value.trim() === "") {
+            throw new Error("Format must be a string and not empty");
+        }
+        this._format = value;
+    }
 
-	printInfo() {
-		super.printInfo(); // вывод из Book
-		console.log(`Format: ${this._format}`);
-	}
+    printInfo() {
+        super.printInfo(); // вывод из Book
+        console.log(`Format: ${this._format}`);
+    }
 
-	static fromBook(book, format) {
-		if (!(book instanceof Book)) {
-			throw new Error('The argument must be an instance of Book.');
-		}
-		return new EBook(book.title, book.author, book.year, format);
-	}
+    static fromBook(book, format) {
+        if (!(book instanceof Book)) {
+            throw new Error("The argument must be an instance of Book.");
+        }
+        return new EBook(book.title, book.author, book.year, format);
+    }
 }

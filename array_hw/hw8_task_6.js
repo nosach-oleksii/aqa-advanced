@@ -14,4 +14,4 @@ const sortList = [...numbersList];
 
 sortList.sort((a, b) => a - b);
 
-console.log(sortList)
+console.log(sortList);

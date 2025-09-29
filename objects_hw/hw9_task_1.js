@@ -4,7 +4,7 @@
 //      a. firstName: рядок, представляє ім'я студента.
 //      b. lastName: рядок, представляє прізвище студента.
 //      c. age: число, представляє вік студента.
-//      d. courses: масив, представляє список курсів, які він вивчає 
+//      d. courses: масив, представляє список курсів, які він вивчає
 // (наприклад, ["Математика", "Історія", "Програмування"]).
 // 3. Виведіть об'єкт student в консоль.
 
@@ -12,8 +12,8 @@
 const student = {};
 
 // додавання властивостей
-student.firstName = 'Bruce';
-student.lastName = 'Lee';
+student.firstName = "Bruce";
+student.lastName = "Lee";
 student.age = 33;
 student.courses = ["Wushu", "Kungfu", "Yunchun"];
 

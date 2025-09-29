@@ -15,50 +15,50 @@
 // класу EBook
 
 export class Book {
-	constructor(title, author, year) {
-		this._title = title;
-		this._author = author;
-		this._year = year;
-	}
+    constructor(title, author, year) {
+        this._title = title;
+        this._author = author;
+        this._year = year;
+    }
 
-	// getters
-	get title() {
-		return this._title;
-	}
-	get author() {
-		return this._author;
-	}
-	get year() {
-		return this._year;
-	}
+    // getters
+    get title() {
+        return this._title;
+    }
+    get author() {
+        return this._author;
+    }
+    get year() {
+        return this._year;
+    }
 
-	// setters
-	set title(value) {
-		if (typeof value !== 'string' || value.trim() === '') {
-			throw new Error('Title must be string and not empty');
-		}
-		this._title = value;
-	}
-	set author(value) {
-		if (typeof value !== 'string' || value.trim() === '') {
-			throw new Error('Author must be string and not empty');
-		}
-		this._author = value;
-	}
-	set year(value) {
-		if (!Number.isInteger(value) || value <= 0) {
-			throw new Error('Year must be positive number');
-		}
-		this._year = value;
-	}
+    // setters
+    set title(value) {
+        if (typeof value !== "string" || value.trim() === "") {
+            throw new Error("Title must be string and not empty");
+        }
+        this._title = value;
+    }
+    set author(value) {
+        if (typeof value !== "string" || value.trim() === "") {
+            throw new Error("Author must be string and not empty");
+        }
+        this._author = value;
+    }
+    set year(value) {
+        if (!Number.isInteger(value) || value <= 0) {
+            throw new Error("Year must be positive number");
+        }
+        this._year = value;
+    }
 
-	printInfo() {
-		console.log(`Book: "${this._title}", Author: ${this._author}, Year: ${this._year}`);
-	}
+    printInfo() {
+        console.log(`Book: "${this._title}", Author: ${this._author}, Year: ${this._year}`);
+    }
 
-	static findOldestBook(books) {
-		return books.reduce((oldest, book) => {
-			return book.year < oldest.year ? book : oldest;
-		});
-	}
+    static findOldestBook(books) {
+        return books.reduce((oldest, book) => {
+            return book.year < oldest.year ? book : oldest;
+        });
+    }
 }
